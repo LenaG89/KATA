@@ -151,13 +151,13 @@ text-align: left;
     width: 40px;
     height: 40px;
     display: inline-block;
-    background-image: url(../img/repair.svg);
+    background-image: url(./img/repair.svg);
     position: absolute;
     top: 0;
     right: -48px;
 }
 .menu-main__link:last-of-type:after{
-    background-image: url(../img/checkstatus.svg);
+    background-image: url(./img/checkstatus.svg);
     margin-left: 32px;
 
 }
@@ -228,7 +228,7 @@ summary::before{
     width: 24px;
     height: 24px;
     display: inline-block;
-    background-image: url(../img/expand.svg);
+    background-image: url(./img/expand.svg);
     vertical-align: middle;
     position:absolute;
     top: 0;
