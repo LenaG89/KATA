@@ -334,7 +334,8 @@ p.services-content__txt:nth-child(2){
 } 
 .slide-menu__list{
     margin-left: 32px;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
+    overflow:visible;   
 }
 .slide-menu__item{
     margin-bottom: 1px;  
