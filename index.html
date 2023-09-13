@@ -10,51 +10,56 @@
       
     </head>
     <body>
-            <header> 
-            <div class="container-header container-header--l-visible--none">
-            <nav class="menu menu-header" >
-                <div class="menu__left">
-                    <button class="button menu-header__button" href="#"><img class="img-link" src="./img/burger.svg" width="40" height="40" alt="Иконка для раскрывающегося главного меню"></button> 
-                    <img  class="menu-header__divider menu-header__divider--xs-visial--none"  src="./img/divider.svg" aria-hidden="true">    
-                    <img class="logo" src="./img/Group.svg" alt="Логотип" width="96.55" height="50.81">
+        <header class="header"> 
+            <div class="header__wrapper container">
+              <div class="header__upper-menu upper-menu">
+                <div class="upper-menu__left">
+                    <button class="upper-menu__btn upper-menu__btn-burger btn--reset" aria-label="Открыть меню"></button>
+                    <div class="upper-menu__left-splitter"></div>        
+                    <img class="upper-menu__logo" src="./img/Group.svg" alt="Логотип компании" >
                 </div>
-                <div class="menu__right">
-                    <button class="button menu-header__button menu-header__button--xs-visial--none" ><img class="img-btn" src="./img/call.svg" width="40" height="40" alt="Иконка с изображением телефонной трубки"></button>
-                    <button class="button menu-header__button menu-header__button--xs-visial--none" href="#" ><img class="img-btn" src="./img/chat.svg" width="40" height="40" alt="Иконка с изображением значка сообщения"></button>
-                    <button class="button menu-header__button menu-header__button--xs-visial--none" href="#" ><img class="img-btn" src="./img/profile.svg" width="40" height="40" alt="Иконка с портретом человека"></button>
-                    <img  class="menu-header__divider"  src="./img/divider.svg" aria-hidden="true">
-                    <button class="button menu-header__button" href="#" ><img class="img-btn" src="./img/repair.svg" width="40" height="40" alt="Иконка с изображением инструментов"></button>
-                    <button class="button menu-header__button" href="#" ><img class="img-btn" src="./img/checkstatus.svg" width="40" height="40" alt="Иконка с изображением блокнота и лупы"></button>
+                <div class="upper-menu__right">
+                    <button class="upper-menu__btn upper-menu__btn-call btn--reset" aria-label="Заказать звонок"></button>
+                    <button class="upper-menu__btn upper-menu__btn-chat btn--reset" aria-label="Обратная связь"></button>
+                    <button class="upper-menu__btn upper-menu__btn-profile btn--reset" aria-label="Профиль"></button>
+                    <div class="upper-menu__right-splitter"></div> 
+                    <button class="upper-menu__btn upper-menu__btn-repair btn--reset" aria-label="Оставить заявку"></button>
+                    <button class="upper-menu__btn upper-menu__btn-checkstatus btn--reset" aria-label="Проверить статус ремонта"></button>
                 </div>
-            </nav></div>
+              </div>
+            </div>
         </header>
-        <main>
-        <div class="container-main">
-        <section class="services">
-        <div class="services-header">
-            <div class="container-services-header-ttl">
-                <div class="services-header__ttl-highlight"><img src="./img/highlight (1).svg"  aria-hidden="true"></div>
-                <h1 class="services-header__ttl">Услуги и сервисы</h1>
-            </div> 
-        <div class="menu services-header-menu">
-            <button class="button services-header-menu__button services-header-menu__button--bg-img--1 services-header-menu__button--xs-s-visible--none" href="#">Оставить заявку</button>
-            <button class="button services-header-menu__button services-header-menu__button--bg-img--2 services-header-menu__button--xs-s-visible--none" href="#">Статус ремонта</button>
-        </div>
-    </div> 
+        <main class="main">
+        <div class="main__wrapper container">
+        <section class="services container">
+        <div class="services__header services-header">
+            <h1 class="visually-hidden">Компания по ремонту техники CPS</h1>
+            <h2 class="services-header__title title">Услуги и сервисы</h2> 
+            <div class="services-header__btn-container">
+              <div class="services-header__btn-wrapper">    
+              <button class="services-header__btn btn--reset">Оставить заявку</button>
+              <img src="./img/repair.svg" alt="Оставить заявку" class="services-header__btn-img">
+              </div>
+              <div class="services-header__btn-wrapper">
+              <button class="services-header__btn btn--reset">Статус ремонта</button>
+              <img src="./img/checkstatus.svg" alt="Проверить статус ремонта" class="services-header__btn-img">
+              </div>
+            </div>
+        </div> 
      
         <nav class="menu slide-menu">
             <ul class="slide-menu__list"> 
-                <li class="slide-menu__item"><a class="link button slide-menu__button slide-menu__button--activ" href="#block-1">Ремонтируемые устройства</a></li>
-                <li class="slide-menu__item"><a class="link button slide-menu__button" href="#">Дополнительные услуги</a></li>
-                <li class="slide-menu__item"><a class="link button slide-menu__button" href="#">Цены на услуги</a></li>
-                <li class="slide-menu__item"><a class="link button slide-menu__button" href="#">Адреса сервисных центров</a></li>
-                <li class="slide-menu__item"><a class="link button slide-menu__button" href="#">Специальные цены</a></li>
-                <li class="slide-menu__item"><a class="link button slide-menu__button" href="#">Отзывы</a></li>
+                <li class="slide-menu__item"><a class="link slide-menu__btn slide-menu__btn--activ" href="#block-1">Ремонтируемые устройства</a></li>
+                <li class="slide-menu__item"><a class="link slide-menu__btn" href="#">Дополнительные услуги</a></li>
+                <li class="slide-menu__item"><a class="link slide-menu__btn" href="#">Цены на услуги</a></li>
+                <li class="slide-menu__item"><a class="link slide-menu__btn" href="#">Адреса сервисных центров</a></li>
+                <li class="slide-menu__item"><a class="link slide-menu__btn" href="#">Специальные цены</a></li>
+                <li class="slide-menu__item"><a class="link slide-menu__btn" href="#">Отзывы</a></li>
             </ul>
             <div class="fade"></div>
         </nav>
         <div class="services-content">
-            <div class="services-content__block-1" id="block-1">
+        <div class="services-content__block-1" id="block-1">
             <p class="txt services-content__txt">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
             </p>
             <p class="txt services-content__txt services-content__txt--xs-l-visible--none">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
@@ -63,8 +68,9 @@
                 <p class="services-content__txt--s-l-visible--none">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
                 <p class="services-content__txt--xs-l-visible--none">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
                 <p class="services-content__txt--xs-s-visible--none">Продолжение текста</p>
-            </details></div> 
-            <div class="img-wrap"><img class="services-content__img-block-1" src="./img/Picture Copy.jpg"  alt="фото с логотипом сервиса"></div>
+            </details>
+        </div>
+        <div class="img-wraper"><img class="services-content__img-block-1" src="./img/Picture Copy.jpg"  alt="фото с логотипом сервиса"></div>
         </div>  
     </section>  
     </div>         
