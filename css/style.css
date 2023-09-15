@@ -211,6 +211,11 @@ margin-right: 12px;
     background-image: url(../img/fade\ copy.png);
     background-position: top 0 left 0;
 }
+.services-content__block-1{
+    overflow-y: auto;
+    
+}
+
 .services-content__txt{
     font-size: 14px;
     line-height: 18px;
@@ -218,6 +223,7 @@ margin-right: 12px;
     margin: 0 16px 16px 16px;
     color: #1B1C21;
 }
+
 .services-content__txt--xs-l-visible--none{
     display: none;
 }
@@ -227,20 +233,24 @@ margin-right: 12px;
 .services-content__txt--s-l-visible--none{
     display:block;
 }
+
+details{
+    vertical-align: middle; 
+    position: relative;  
+}
+details>p:first-of-type{
+    margin-bottom: 45px;
+}
 .summary__txt{
     line-height: 24px; 
     list-style: none;
     position: relative;
     margin-left: 32px;
+    margin-top: 10px;
     letter-spacing: -0.2px;
     font-family: 'TT Lakes-Medium';
 }
-.summary__txt~p{
-    padding-top: 10px;
-}
-details{
-    vertical-align: middle;   
-}
+
 summary::before{
     content: "";
     width: 24px;
@@ -251,6 +261,35 @@ summary::before{
     position:absolute;
     top: 0;
     left: -32px;
+}
+summary::after{
+    content: "Свернуть";
+    width: 60px;
+    height: 24px;
+    display: none;
+    vertical-align: middle;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+details[open] summary{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 0;
+}
+
+details[open] summary::after{
+    display: inline-block;
+    font-size: 14px;   
+}
+
+details[open] summary::before{
+    transform:rotate(180deg);
+}
+details[open] summary{
+    margin-bottom: 45px;
+
 }
 .img-wraper{
    width: 100%; 
@@ -304,9 +343,15 @@ summary::before{
 display: flex;
 justify-content: space-between;
 }
+.services-content__block-1{
+height: 198px;
+}
 .services-content__txt{
  margin: 0 0 20px 24px;
  line-height: 20px;
+}
+details[open] .services-content__txt{
+margin-right:  24px;
 }
 .services-content__txt--xs-s-visible--none{
     display: none;
@@ -324,10 +369,11 @@ p.services-content__txt:nth-child(2){
     display:none;
 }
 .img-wraper{
-    margin-left: 48px;
+    margin-left: 28px;
     margin-right: 25px;
     width: 100%;
 }
+
 .services-content__img-block-1{
     min-width: 360px;
     width: 100%;
@@ -365,6 +411,10 @@ p.services-content__txt:nth-child(2){
 .services-content{
     display: flex;
 }
+.services-content__block-1{
+    height:300px;
+    overflow-y: auto;
+    }
 .services-content__txt{
     margin: 0 0 20px 34px;
     line-height: 20px;
