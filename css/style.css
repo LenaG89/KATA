@@ -205,7 +205,7 @@ margin-right: 12px;
     border-radius: 6px;
     background-color: #FFFFFF;
 }
-.fade{
+.slide-menu__fade{
     width: 24px;
     height: 40px;
     background-image: url(../img/fade\ copy.png);
